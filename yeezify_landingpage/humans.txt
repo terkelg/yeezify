@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Terkel Gjervig -- Developer -- @terkelg
+
+# THANKS
+
+    Katherine Champagne for the Hey Girl extension.
+    Kanye West for being awesome.
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Photoshop, jQuery, Gulp.js, Sass, GitHub
+    Git, Modernizr, Normalize.css, Animate.css, HTML5 Boilerplate

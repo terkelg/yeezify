@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>Yeezify</title>
+  <script type="text/javascript">
+
+    // Set up the Listener to the button
+    safari.application.addEventListener("command", performButtonAction, false);
+    function performButtonAction(event)
+    {
+        if (event.command === "yeezifyThis") {
+          sendMessage();
+        };
+    };
+
+    // Trigger injected script
+    function sendMessage() {
+        safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("yeezifyNow", "");
+    };
+
+  </script>
+  </head>
+  <body>
+  </body>
+</html>
