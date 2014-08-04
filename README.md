@@ -6,7 +6,7 @@ Welcome!
 
 ###About
 Sick of your Facebook friends? News getting you down?
-Yeezify is a bookmarklet that changes every image on a webpage to one of Kanye West.
+Yeezify is a bookmarklet and browser extension that changes every image on a webpage to one of Kanye West.
 
 ###How To Install
 * Select all of the code from [the bookmarklet file](https://github.com/terkelg/yeezify/blob/master/bookmarklet.js) and drag it/copy it to your bookmarks bar.
@@ -15,7 +15,7 @@ Yeezify is a bookmarklet that changes every image on a webpage to one of Kanye W
 
 * Install the Firefox Add-on by [visiting addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/yeezify/).
 
-* Install the Safari Extension by using [this direct link](https://addons.mozilla.org/en-US/firefox/addon/yeezify/).
+* Install the Safari Extension by using [this direct link](http://yeezify.com/plugin/yeezify.safariextz).
 
 ###How To Use
 * Click the bookmarklet or extension on any page that needs a little Kanye.
