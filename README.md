@@ -1,10 +1,7 @@
-Welcome!
-================
-
 # Holy Yeezus
 !["Kanye West"](http://i.imgur.com/930hKlr.png "I'mma let you finish, but Yeezify is the best extension of all time")
 
-###About
+###[Yeezify.com](http://yeezify.com)
 Sick of your Facebook friends? News getting you down?
 Yeezify is a bookmarklet and browser extension that changes every image on a webpage to one of Kanye West.
 
