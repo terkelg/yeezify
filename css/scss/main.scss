@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/*
+ *  ______               __              ___       ____
+ * /\__  _\             /\ \            /\_ \     /\  _`\
+ * \/_/\ \/    __   _ __\ \ \/'\      __\//\ \    \ \ \L\_\
+ *    \ \ \  /'__`\/\`'__\ \ , <    /'__`\\ \ \    \ \ \L_L
+ *     \ \ \/\  __/\ \ \/ \ \ \\`\ /\  __/ \_\ \_   \ \ \/, \
+ *      \ \_\ \____\\ \_\  \ \_\ \_\ \____\/\____\   \ \____/
+ *       \/_/\/____/ \/_/   \/_/\/_/\/____/\/____/    \/___/
+ *
+ *  By Terkel Gjervig
+ *  - Copuright 2014
+ */
+
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+@import "normalize";
+@import "util";
+@import "animate";
+
+
+/* ==========================================================================
+   Settings
+   ========================================================================== */
+
+$fontFamiy: 'Source Sans Pro', sans-serif;
+$color-main: #F32845;
+$color-bright: #fff;
+
+
+/* ==========================================================================
+   Styles
+   ========================================================================== */
+
+/*
+ * Defaults
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #222;
+    font-family: $fontFamiy;
+    font-size: 1.1em;
+    line-height: 1.4;
+    background: url(../img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.0em;
+    margin-top: 0;
+}
+
+a { color: #F32845; }
+
+
+/*
+ * Layout
+ */
+.wrapper {
+    height: 100vh;
+    min-height: 530px; /* stop sticky footer */
+    margin-bottom: -50px; /* equal to footer height */
+    padding-bottom: 50px; /* push content 50px up */
+}
+
+.wrapper::after {
+    content: "";
+    display: block;
+}
+
+.footer, .wrapper::after {
+    height: 50px;
+    width: 100%;
+}
+
+@media screen and (min-height: 530px) {
+    .wrapper__container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+/*
+ * Style
+ */
+.wrapper { background-color: rgba(255, 255, 255, 0.8); }
+
+.content {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 475px;
+    text-align: center;
+
+    .title {
+        margin-bottom: 10px;
+    }
+    .lead {
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .body { margin-bottom: 30px; }
+
+    footer {
+        font-size: 0.7em;
+        p { margin-bottom: 10px; }
+    }
+}
+
+.footer {
+    text-align: center;
+    background-color: #222;
+    opacity: 0.8;
+    display: table;
+
+    p {
+        display: table-cell;
+        vertical-align: middle;
+        opacity: 1.0;
+        color: #fff;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 920px) {
+
+    .wrapper { background: none; }
+
+    .content {
+        .title { font-size: 2.5em; }
+        margin: 0;
+        padding: 0;
+        max-width: 400px;
+        position: relative;
+        left: 15%;
+    }
+
+}
+
+
+
+/*
+ * Buttons
+ */
+.btn {
+    width: 100%;
+    float: left;
+    padding: 14px 24px;
+    margin-bottom: 20px;
+
+    color: $color-bright;
+    background-color: $color-main;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    transition: background 0.5s ease;
+}
+.btn:hover {
+    background-color: darken($color-main, 20%);
+}
